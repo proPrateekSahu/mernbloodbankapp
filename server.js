@@ -19,17 +19,13 @@ const app = express();
 
 //middlewares
 app.use(express.json());
-<<<<<<< HEAD
+
 app.use(
   cors({
     origin: ['http://localhost:8080', 'https://mernbloodbankapp.onrender.com/'],
   })
 );
-=======
-app.use(cors({
-    origin: ['http://localhost:8080', 'https://mernbloodbankapp.onrender.com/'],
-  }));
->>>>>>> 435bf0f565036430c5b7bc8affa95c50b29809ac
+
 app.use(morgan('dev'));
 
 //routes
